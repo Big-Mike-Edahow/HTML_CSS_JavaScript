@@ -1,0 +1,7 @@
+/* style.css */
+
+h1 {
+    border: 10px dashed blue;
+    padding: 5px;
+    width: 500px;
+}
