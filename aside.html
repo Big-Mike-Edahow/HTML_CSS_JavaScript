@@ -1,0 +1,50 @@
+<!-- aside.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside Example</title>
+    <style>
+        article.sidebar > p,aside {
+            display: table-cell;
+            padding-right: 20px;
+        }
+
+        body {
+            background-color: rgb(230, 16, 219);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Famous Quotes</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Happiness</h2>
+            <p><q>The secret of happiness is not in doing what one likes, but in liking what one has to do.</q><br>
+                <cite>James M. Barrie</cite>
+            </p>
+            <aside>James M. Barrie (1860 - 1937) was a Scottish author and playwright.</aside>
+        </article>
+        <article class="sidebar">
+            <h2>Cynicism</h2>
+            <p><q>A cynic is a man who knows the price of everything<br>but the value of nothing.</q><br>
+                <cite>Oscar Wilde</cite>
+            </p>
+            <aside>Oscar Wilde (1854 - 1900)<br>was an Irish writer and poet.</aside>
+        </article>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <small>Copyright &copy; 2023 Mike Jackson</small>
+    </footer>
+</body>
+
+</html>
