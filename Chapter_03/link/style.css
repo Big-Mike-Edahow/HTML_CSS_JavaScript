@@ -1,0 +1,18 @@
+/* style.css */
+
+body {
+    background-color:fuchsia;
+}
+
+a:hover {
+    background: yellow;
+}
+
+a:active {
+    background: red;
+    color: white;
+}
+
+a:visited {
+    background: aqua;
+}
