@@ -1,0 +1,13 @@
+/* style.css */
+
+#chart {
+    visibility: hidden;
+    height: 0px;
+}
+
+#links {
+    padding: 5px;
+    border: 1px solid;
+    float: left;
+    width: 200px;
+}
