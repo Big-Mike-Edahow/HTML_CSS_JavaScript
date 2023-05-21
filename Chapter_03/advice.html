@@ -1,0 +1,37 @@
+<!-- advice.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice Example</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <p><abbr title="Hypertext Markup Language">HTML </abbr>In easy steps</p>
+        <p><cite title="Inventor of the Hypertext Markup Language">Sir Tim Berners-Lee</cite></p>
+        <p><dfn title="The popular language of the World Wide Web. Commonly abbreviated to 'HTML'">Hypertext Markup Language</dfn></p>
+        <p><kbd title="Press the Y key on your keyboard to execute a script. This requires JavaScript to be enabled in your browser">Hit Y to Continue</kbd></p>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function showkey (e) {
+            if (e.keyCode === 89 || e.keyCode === 121) {
+                alert ('Y pressed. Thank you.');
+            };
+        };
+
+        document.onkeydown = showkey;
+    </script>
+</body>
+
+</html>
