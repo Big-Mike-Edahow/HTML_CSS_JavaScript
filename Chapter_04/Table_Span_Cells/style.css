@@ -1,0 +1,22 @@
+/* style.css */
+
+body {
+    background-color: bisque;
+}
+
+table {
+    width: 500px;
+    border: 5px solid black;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+td[rowspan="2"] {
+    background: pink;
+}
+
+td[rowspan="3"] {
+    background: hotpink;
+}
