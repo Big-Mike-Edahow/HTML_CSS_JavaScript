@@ -1,0 +1,17 @@
+/* style.css */
+
+body.concept {
+    width: 900px;
+}
+
+p.concept {
+    width: 300px;
+    margin: 0;
+    float: left;
+}
+
+article.left200 {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
