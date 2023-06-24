@@ -1,0 +1,63 @@
+<!-- index.html -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>HTML Canvas</title>
+    <style>
+        header h1 {
+            font-size: 48px;
+        }
+        body {
+            text-align: center;
+            background-color: lightslategray;
+        }
+        aside h2, h3 {
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Putting in the work</h1>
+    </header>
+    <main>
+        <section>
+        <canvas id="canvas" width="675" height="150">[Fallback Text]</canvas>
+        </section>
+        <aside>
+            <h2>Studying Web Development</h2>
+            <h3>Morning, Noon, and Night.</h3>
+        </aside>
+    </main>
+
+    <script>
+
+        (function () {
+
+            const ctx = document.getElementById('canvas').getContext('2d');
+            ctx.lineWidth = 2;
+            ctx.font = '5em Fantasy';
+
+            ctx.fillStyle = 'Aqua';
+            ctx.fillRect(0, 0, 675, 150);
+            ctx.strokeStyle = 'Green';
+            ctx.strokeRect(0, 0, 675, 150);
+
+            ctx.fillStyle = 'DarkMagenta';
+            ctx.fillText('Big Mike...Web Pro', 30, 100);
+            ctx.strokeStyle = 'Black';
+            ctx.strokeText('Big Mike...Web Pro', 30, 100);
+
+        })()
+
+    </script>
+    
+</body>
+
+</html>

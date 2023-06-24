@@ -1,0 +1,78 @@
+<!-- index.html -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Slot</title>
+    <style>
+        * {
+            font: 1em sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="homonym">
+        <span slot="word"> Air </span>
+        <span slot="def-1"> A lilting tune </span>
+        <span slot="def-2"> What we breathe </span>
+    </div>
+
+    <div class="homonym">
+        <span slot="word"> Current </span>
+        <span slot="def-1"> A flow of water </span>
+        <span slot="def-2"> Up to date </span>
+    </div>
+
+    <template id="list-template">
+        <dl>
+            <dt>
+                <slot name="word">Term</slot>
+            <dd>
+                <slot name="def-1">1st Definition</slot>
+            <dd>
+                <slot name="def-2">2nd Definition</slot>
+        </dl>
+        <style>
+            dl {
+                width: 250px;
+                border: 1px solid;
+            }
+
+            dt {
+                background: Orange;
+                color: White;
+            }
+        </style>
+    </template>
+
+    <script>
+
+        (function () {
+
+            const homs = document.getElementsByClassName('homonym')
+            const temp = document.getElementById('list-template')
+
+            if ('attachShadow' in homs[0]) {
+                let i, copy, shadow
+
+                for (i = 0; i < homs.length; i++) {
+                    copy = temp.content.cloneNode(true)
+                    shadow = homs[i].attachShadow({ mode: 'closed' })
+                    shadow.appendChild(copy)
+                }
+
+            }
+
+        })()
+
+    </script>
+
+</body>
+
+</html>

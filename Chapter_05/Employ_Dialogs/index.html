@@ -1,0 +1,62 @@
+<!-- index.html -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Modal Dialog</title>
+    <style>
+        * {
+            font: 1em sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="show">Show Dialog</button>
+
+    <p id="info"></p>
+
+    <dialog id="dlog">
+        Your Choices
+        <img src="./media/dialog-qmark.svg" height="64" width="64" alt="Question Mark">
+        <br>
+        <button id="cncl">Cancel</button>
+        <button id="conf">Confirm</button>
+
+    </dialog>
+
+    <script>
+
+        (function () {
+            const dlog = document.getElementById('dlog');
+            const info = document.getElementById('info');
+            const show = document.getElementById('show');
+            const cncl = document.getElementById('cncl');
+            const conf = document.getElementById('conf');
+
+            show.addEventListener('click', function () {
+                dlog.showModal();
+                info.innerText = 'Modal Dialog Open';
+            })
+
+            cncl.addEventListener('click', function () {
+                dlog.close();
+                info.innerText = 'Modal Dialog Canceled';
+            })
+
+            conf.addEventListener('click',
+                function () {
+                    dlog.close();
+                    info.innerText = 'Modal Dialog Confirmed';
+                })
+        })()
+
+    </script>
+</body>
+
+</html>
