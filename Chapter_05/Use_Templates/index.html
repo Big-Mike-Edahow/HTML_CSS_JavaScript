@@ -1,0 +1,48 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Templates</title>
+</head>
+
+<body>
+    <heading>
+        <h1>*** Hotel Reviews ***</h1>
+    </heading>
+
+    <main>
+        <section>
+            <figure id="hotel-image">
+                <img src="./media/hotel.jpg" alt="hotel" width="320px" height="240px">
+            </figure>
+        <p id="hotel" onclick="addStar(this)">Hotel Mistrale</p>
+        <p id="clear" onclick="removeStars()">Clear</p>
+
+        <template id="star">
+            <img src="./media/star.png" alt="Gold Star">
+        </template>
+    </main>
+    <script>
+
+        function addStar(hotel) {
+            const temp = document.getElementById('star')
+            const copy = temp.content.cloneNode(true)
+            hotel.appendChild(copy)
+        }
+
+        function removeStars() {
+            const hotel = document.getElementById('hotel')
+            while (hotel.childElementCount > 0) {
+                hotel.removeChild(hotel.lastChild)
+            }
+        }
+
+    </script>
+</body>
+
+</html>

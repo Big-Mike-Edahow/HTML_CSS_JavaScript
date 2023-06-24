@@ -1,0 +1,26 @@
+/* style.css */
+
+body {
+    background-color: rgb(12, 236, 218);
+}
+
+heading h1 {
+    text-align: center;
+}
+
+#hotel-image {
+    text-align: center;
+}
+
+#hotel {
+    font:2.5em sans-serif;
+    cursor: pointer;
+}
+
+#clear {
+    font: 1.5em sans-serif;
+    width: 100px;
+    border: 1px solid;
+    background: Orange;
+    cursor: pointer;
+}

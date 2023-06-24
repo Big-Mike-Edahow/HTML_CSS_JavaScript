@@ -1,0 +1,57 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Progress Bar</title>
+</head>
+
+<body>
+    <heading>
+        <h1>Play that funky music!</h1>
+    </heading>
+    <main>
+        <section>
+            <figure>
+                <img src="./media/groovy-70s-dance-graphic-art.webp" width="320px" height="240px">
+                <figcaption>Grooving up slowly...</figcaption>
+            </figure>
+            <article>
+                <audio id="snd">
+                    <source src="./media/audio.mp3" type="audio/mpeg">
+                    Audio not supported
+                </audio>
+                <img id="ctl" src="./media/progress-button.png" width="32px" height="32px" alt="Control">
+                <progress id="bar" value="0"></progress>
+                <span id="num">[Audio]</span>
+            </article>
+        </section>
+    </main>
+    <script>
+        (function () {
+            const snd = document.getElementById('snd');
+            const ctl = document.getElementById('ctl');
+            const bar = document.getElementById('bar');
+            const num = document.getElementById('num');
+
+            let run = true;
+
+            ctl.onclick = function () {
+                (run) ? snd.play() : snd.pause();
+                run = !run;
+            }
+
+            snd.ontimeupdate = function () {
+                bar.value = (snd.currentTime / snd.duration);
+                num.innerHTML = Math.floor(100 * bar.value) + '%';
+            }
+
+        })()
+    </script>
+</body>
+
+</html>
