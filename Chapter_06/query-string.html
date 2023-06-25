@@ -1,0 +1,33 @@
+<!-- query-string.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query String</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <a href="http://127.0.0.1/cgi-bin/echo.py?CSS=Style">Styling Web Pages</a>
+            <button id="sender">Scripting Web Pages</button>
+        </section>
+    </main>
+    <script>
+
+        (function () {
+
+            const sender = document.getElementById('sender')
+            sender.addEventListener('click', function () {
+                location = 'http://localhost/cgi-bin/echo.py?JavaScript=Function'
+            })
+
+        })()
+
+    </script>
+</body>
+
+</html>
