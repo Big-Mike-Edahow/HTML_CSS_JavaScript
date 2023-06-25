@@ -16,14 +16,12 @@ print('<style>tr, th, td {border: 2px solid Gray;}')
 print('body {background-color: BlanchedAlmond;}</style>')
 print('<table style="width:500px">')
 print('<tr><th>Key</th><th>Value</th></tr>')
-print('<tr>')
 
 for i in form.keys( ):
   key = str( i )
   val = str( form.getvalue( key ) )
-  print( '<td>' + key + '</td>' + '<td>' + val + '</td>' )
+  print( '<tr><td>' + key + '</td>' + '<td>' + val + '</td></tr>' )
   
-print('</tr>')
 print('</table>')    
 print ('''<img src=\"http://big-mike-edahow.github.io/images/Apache-Server.jpg\"
 width=\"160px\" height=\"120px\">''')
