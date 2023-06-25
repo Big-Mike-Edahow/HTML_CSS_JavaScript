@@ -1,0 +1,39 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Logo Buttons</title>
+</head>
+
+<body>
+    <header>
+        <h1>Logo Buttons</h1>
+    </header>
+    <main>
+        <section>
+            <form method="GET" action="http://localhost/cgi-bin/echo.py">
+                <fieldset>
+                    <legend>Favorite Color</legend>
+                    <input type="text" name="Color">
+
+                    <button type="button" onclick="alert('Enter your favorite color in the text box')">
+                        <img src="./images/logo-help.png" alt="Help">Help
+                    </button>
+                    <button type="submit">
+                        <img src="./images/logo-submit.png" alt="Submit">Submit
+                    </button>
+                    <button type="reset">
+                        <img src="./images/logo-reset.png" alt="Reset">Reset
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
