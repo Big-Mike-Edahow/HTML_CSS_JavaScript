@@ -1,0 +1,40 @@
+<!-- index.html -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Button</title>
+    <style>
+        body {background-color: tomato;}
+    </style>
+</head>
+
+<body>
+    <main>
+        <form method="GET" action="http://localhost/cgi-bin/echo.py">
+            <fieldset>
+                <legend>Pizza Toppings</legend>
+                <input id="pepperoni" type="checkbox" name="Toppings" value="Pepperoni"> Pepperoni |
+                <input id="mushroom" type="checkbox" name="Toppings" value="Mushroom"> Mushroom |
+                <input id="bbqsauce" type="checkbox" name="Toppings" value="BBQ Sauce"> BBQ Sauce
+            </fieldset>
+            <input type="reset" value="Reset Form">
+            <input type="button" value="Choose For Me" id="btn">
+            <input type="submit" value="Submit Form">
+        </form>
+    </main>
+    
+    <script>
+        (function () {
+            const pep = document.getElementById('pepperoni')
+            const btn = document.getElementById('btn')
+
+            btn.addEventListener('click', function () { pep.checked = true })
+        })()
+    </script>
+</body>
+
+</html>

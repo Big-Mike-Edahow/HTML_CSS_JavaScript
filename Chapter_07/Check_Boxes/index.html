@@ -1,0 +1,39 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Boxes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Check Boxes</h1>
+    </header>
+    <main>
+        <form method="GET" action="http://127.0.0.1/cgi-bin/echo.py">
+            <section>
+                <p>
+                Send details
+                <input type="checkbox" name="Send" value="Details">
+                Send prices
+                <input type="checkbox" name="Send" value="Prices">
+                </p>
+            </section>  
+            <section>
+                <fieldset>
+                    <legend>What kind of language is HTML?</legend>
+                    Scripting <input type="radio" name="Definition" value="Scripting"><br>
+                    Markup <input type="radio" name="Definition" value="Markup"><br>
+                    Programming <input type="radio" name="Definition" value="Programming" checked>
+                </fieldset>
+            </section>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </main>  
+</body>
+
+</html>

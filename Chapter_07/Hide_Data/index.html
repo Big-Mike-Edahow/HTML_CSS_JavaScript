@@ -1,0 +1,48 @@
+<!-- index.html -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hidden Data</title>
+    <style>
+        img {
+            float: left;
+            margin-right: 5px;
+        }
+
+        output {
+            color: red;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="./images/hidden-sale.png" width="200" height="120" alt="Sale">
+
+    <form method="GET" action="http://localhost/cgi-bin/echo.py" oninput="sum.value=multiply(qty,price)">
+        Qty (60 Available)
+        <input type="number" id="qty" name="Quantity" min="1" max="60">
+        <input type="hidden" id="price" name="Unit Price" value="24.99">
+        <output name="sum" for="qty price"></output> <br>
+        <input type="submit" name="Offer" value="Buy Teddy Bears">
+    </form>
+
+    <script>
+        function multiply(q, p) {
+
+            let result = parseFloat(q.value) * parseFloat(p.value)
+            if (isNaN(result) || result < 1) return ' '
+            else return 'Total: $' + result.toFixed(2)
+        }
+    </script>
+</body>
+
+</html>

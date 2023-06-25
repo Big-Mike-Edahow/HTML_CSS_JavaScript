@@ -1,0 +1,29 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+    <style> body {background-color: paleturquoise} </style>
+</head>
+
+<body>
+    <header>
+        <h1>Input Types</h1>
+    </header>
+    <main>
+        <form method="GET" action="http://127.0.0.1/cgi-bin/echo.py">
+            <input type="color" name="Color">
+            <input type="range" name="Range" min="1" max="10">
+            <input type="time" name="Time">
+            <br>
+            <input type="url" name="Url" size="54" required>
+            <p><input type="submit" value="Submit Form"></p>
+        </form>
+    </main>
+</body>
+
+</html>

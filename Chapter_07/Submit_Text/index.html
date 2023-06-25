@@ -1,0 +1,33 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input</title>
+</head>
+
+<body>
+    <header>
+        <h1>Data Collection</h1>
+    </header>
+    <main>
+        <section>
+            <form method="GET" action="http://127.0.0.1/cgi-bin/echo.py">
+                <dl>
+                    <dt>User Name:</dt>
+                    <dd><input type="text" name="Name"></dd>
+                    <dt>Password:</dt>
+                    <dd><input type="password" name="Password">
+                    <dt>Zip Code:</dt>
+                    <dd><input type="text" name="Zip" size="5" maxlength="5"</dd>
+                </dl>
+                <input type="submit" name="Form" value="Sender">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
