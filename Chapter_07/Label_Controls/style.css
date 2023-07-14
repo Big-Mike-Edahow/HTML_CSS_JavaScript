@@ -1,0 +1,10 @@
+/* style.css */
+
+body {
+    background-color: plum;
+}
+
+label.hilite {
+background: red;
+color: white;
+}

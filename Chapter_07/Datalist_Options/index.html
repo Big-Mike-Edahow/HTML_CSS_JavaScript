@@ -1,0 +1,30 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Data List</title>
+</head>
+
+<body>
+    <form method="GET" action="http://127.0.0.1/cgi-bin/echo.py">
+        <datalist id="browsers">
+            <option value="Google Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Internet Explorer"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+            <option value="Microsoft Edge"></option>
+        </datalist>
+        <label>
+            Choose your browser from this list:
+            <input list="browsers" name="myBrowser">
+        </label>
+        <p><input type="submit" value="Submit Form"></p>
+    </form>
+
+</html>
