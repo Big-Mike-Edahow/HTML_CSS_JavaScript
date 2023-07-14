@@ -1,0 +1,14 @@
+/* style.css */
+
+body {
+    background-color: lightblue;
+}
+
+h1, h2 {
+    color: blue;
+    background: yellow;
+}
+
+p {
+    color: red;
+}

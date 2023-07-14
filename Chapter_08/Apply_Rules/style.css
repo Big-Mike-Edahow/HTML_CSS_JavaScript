@@ -1,0 +1,16 @@
+/* style.css */
+
+h1 {
+    color: blue;
+    background: yellow;
+}
+
+h2 {
+    color: white;
+    background: green;
+}
+
+p {
+    color: yellow;
+    background: red;
+}
