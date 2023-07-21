@@ -1,0 +1,14 @@
+/* style.css */
+
+section {
+    width: 50%;
+}
+
+.frame {
+    border: 2px solid red;
+}
+
+p.frame {
+    border: 2px solid blue;
+    width: 50%;
+}

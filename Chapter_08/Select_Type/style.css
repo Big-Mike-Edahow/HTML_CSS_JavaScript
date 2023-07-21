@@ -1,0 +1,21 @@
+/* style.css */
+
+header {
+    width: 50%;
+}
+header * {
+    border: 2px solid red;
+}
+
+a {
+    background: yellow;
+}
+
+h1, ul {
+    color: white;
+    background: blue;
+}
+
+* {
+    font-style: italic;
+}
