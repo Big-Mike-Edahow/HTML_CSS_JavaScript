@@ -1,0 +1,54 @@
+/* style.css */
+
+body {
+    width: 100%;
+    text-align: center;
+    background: lightseagreen;
+}
+
+header {
+    background-color: antiquewhite;
+}
+
+main {
+    width: 50%;
+    display: inline-block;
+}
+
+section {
+    background-color: indianred;
+}
+
+li[class="reptile"] {
+    background: lightgreen;
+}
+
+li[class="domestic-animal"] {
+    background: goldenrodj;
+}
+
+li[class="wild-animal"] {
+    background: orangered;
+}
+
+li[class="cat-family"] {
+    background: gold;
+}
+
+li[class="ocean-fish"] {
+    background: firebrick;
+}
+
+li[class="ocean-bird"] {
+    background: lightsteelblue;
+}
+
+li[class="domestic-bird"] {
+    background: lime;
+}
+
+footer {
+    background-color: fuchsia;
+    padding-bottom: 5vh;
+    margin-bottom: 0;
+}

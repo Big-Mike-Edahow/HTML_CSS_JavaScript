@@ -1,0 +1,19 @@
+/* style.css */
+
+body {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)), url("./images/Coral_Sunset.jpg");
+}
+
+p.repeat {
+    width: 384px;
+    height: 128px;
+    background-color: lightblue;
+    background-image: url("./images/crab.png");
+}
+
+p.repeat-y {
+    width: 384px;
+    height: 128px;
+    background-color: deepskyblue;
+    background-image: url("./images/crab.png");
+}
