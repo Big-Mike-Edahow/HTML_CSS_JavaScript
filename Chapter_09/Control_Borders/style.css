@@ -1,0 +1,21 @@
+/* style.css */
+
+p#number-1 {
+    color: tomato;
+    border: solid;
+}
+
+p#number-2 {
+    border-top: 0.5em dotted lightsalmon;
+    border-bottom: 0.5em dashed darksalmon;
+}
+
+p#number-3 {
+    border-width: 1em;
+    border-style: ridge double;
+    border-color: mistyrose;
+}
+
+p#number-4 {
+    border: 1em outset tomato;
+}

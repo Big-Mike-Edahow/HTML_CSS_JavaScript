@@ -1,0 +1,25 @@
+/* style.css */
+
+div#absolute {
+    width: 3in;
+    height: 0.5in;
+    background-color: tomato;
+}
+
+div#container {
+    width: 400px;
+    height: 150px;
+    background-color: mistyrose;
+}
+
+div#percent {
+    width: 50%;
+    height: 50%;
+    background-color: tomato;
+}
+
+div#relative {
+    width: 20em;
+    height: 2em;
+    background-color: lightsalmon;
+}
