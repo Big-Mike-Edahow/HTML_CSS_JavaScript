@@ -1,0 +1,19 @@
+/* style.css */
+
+p {
+    background-color: lightsalmon;
+}
+
+img[src="./images/viper-front.png"] {
+    float: right;
+    border: 2px dashed tomato;
+}
+
+img[src="./images/viper-rear.png"] {
+    float: left;
+    border: 2px dashed tomato;
+}
+
+p.clear {
+    clear: both;
+}
