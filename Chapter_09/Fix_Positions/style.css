@@ -1,0 +1,20 @@
+/* style.css */
+
+section {
+    width: 150px;
+    padding: 10px;
+    background: tomato;
+    color: white;
+}
+
+section.sticky {
+    position: sticky;
+    top: 10px;
+    margin: auto;
+}
+
+section.fixed {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
