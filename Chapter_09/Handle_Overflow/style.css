@@ -1,0 +1,38 @@
+/* style.css */
+
+div {
+    display: inline-block;
+    width: 80px;
+    height: 130px;
+    border: 2px dashed Tomato;
+    margin-right: 60px;
+}
+
+div.vis {
+    overflow: visible;
+}
+
+div.hid {
+    overflow: hidden;
+}
+
+div.scr {
+    overflow: scroll;
+}
+
+div.ver {
+    width: 120px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+div.hor {height: 150px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+div.txt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
