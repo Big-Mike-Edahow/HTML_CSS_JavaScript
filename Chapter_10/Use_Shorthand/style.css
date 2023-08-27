@@ -1,0 +1,29 @@
+/* style.css */
+
+p {
+    font: normal small/1.3em "Courier", monospace;
+}
+
+span.head {
+    font: 350% "Pristina", cursive;
+}
+
+span.giant {
+    font: small-caps large "Castellar", fantasy;
+}
+
+span.bears {
+    font: large "Arial", sans-serif;
+}
+
+span.score {
+    font: bold small "Verdana", sans-serif;
+}
+
+span.venue {
+    font: italic medium "Arial", sans-serif;
+}
+
+span.coach {
+    font: medium "Comic Sans MS", cursive;
+}

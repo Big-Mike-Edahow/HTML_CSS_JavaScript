@@ -1,0 +1,25 @@
+/* style.css */
+
+body {
+    background-color: darkkhaki;
+}
+
+p {
+    font-family: "Arial Narrow", sans-serif;
+}
+
+span.serif {
+    font-family: "Times New Roman", serif;
+}
+
+span.fantasy {
+    font-family: "Castellar", fantasy;
+}
+
+span.mono {
+    font-family: "Courier", monospace;
+}
+
+span.cursive {
+    font-family: "Segoe Script", cursive;
+}

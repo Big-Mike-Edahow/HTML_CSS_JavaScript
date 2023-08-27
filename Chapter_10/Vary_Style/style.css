@@ -1,0 +1,18 @@
+/* style.css */
+
+body {
+    background-color: gainsboro;
+}
+
+h1.italics {
+    font-style: italic;
+}
+
+h1.caps {
+    font-variant: small-caps;
+}
+
+span.normal {
+    font-variant: normal;
+    background-color: lightgreen;
+}
