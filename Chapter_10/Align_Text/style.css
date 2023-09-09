@@ -1,0 +1,24 @@
+/* style.css */
+
+p, span {
+    font: medium monospace;
+    padding: 2px;
+    background-color: lightcoral;
+    border: 1px solid lightseagreen;
+}
+
+.just {
+    text-align: justify;
+}
+
+.up {
+    vertical-align: super;
+}
+
+.down {
+    vertical-align: sub;
+}
+
+.top {
+    vertical-align: top;
+}

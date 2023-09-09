@@ -1,0 +1,19 @@
+/* style.css */
+
+body {
+    background-color: lightgreen;
+}
+
+p {
+    text-indent: 5em;
+}
+
+span.spread {
+    letter-spacing: 1em;
+    background-color: darkturquoise;
+}
+
+span.space {
+    word-spacing: 1.5em;
+    background-color: aqua;
+}
