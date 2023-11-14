@@ -1,0 +1,41 @@
+/* style.css */
+
+p.main {
+    font: medium "Courier", monospace;
+    font-size: 2em;
+    background: LightGreen;
+}
+
+span.signature {
+    font: 2em "Lucida Handwriting", cursive;
+    color: Green;
+}
+
+span.under {
+    text-decoration: underline;
+}
+
+span.thru {
+    text-decoration: line-through;
+}
+
+span.rails {
+    text-decoration: overline underline;
+}
+
+span.lower {
+    text-transform: lowercase;
+}
+
+span.upper {
+    text-transform: uppercase;
+}
+
+span.caps {
+    text-transform: capitalize;
+}
+
+a.plain {
+    text-decoration: none;
+}
+

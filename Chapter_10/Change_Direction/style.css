@@ -1,0 +1,24 @@
+/* style.css */
+
+p,
+dd {
+    background: LightGreen;
+    font-size: 2em;
+}
+
+p {
+    white-space: pre;
+}
+
+dd.ltr {
+    direction: ltr;
+}
+
+dd.rtl {
+    direction: rtl;
+}
+
+dd.bidi-off {
+    unicode-bidi: bidi-override;
+}
+
