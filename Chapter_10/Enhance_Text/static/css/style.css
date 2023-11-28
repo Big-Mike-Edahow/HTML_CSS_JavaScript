@@ -1,0 +1,43 @@
+/* style.css */
+
+body {
+    background-color: rgb(229, 151, 151);
+}
+
+h1::first-letter {
+    color: ForestGreen;
+}
+
+h1::selection {
+    background: LawnGreen;
+}
+
+p::before {
+    content: "***";
+    background: LightGreen;
+}
+
+p::after {
+    content: "!!!";
+    background: LawnGreen;
+}
+
+a[href].quote::before {
+    content: open-quote;
+    color: Blue;
+}
+
+a[href].quote::after {
+    content: close-quote;
+    color: Blue;
+}
+
+a[href].pdf::after {
+    content: url(../images/pdf-ico.png);
+}
+
+a[href].att:after {
+    content: "(" attr(href) ")";
+    color: Blue;
+}
+
