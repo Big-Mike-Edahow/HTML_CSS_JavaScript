@@ -1,0 +1,106 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(211, 146, 228);
+    font-size: 1.5em;
+}
+
+main {
+    margin-top: 35px;
+    padding-left: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+ol {
+    background-color:lightsteelblue;
+    border: 2px solid rgb(89, 89, 233);
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  
+    
+}
+
+li {
+    background: White;
+    margin: 5px;
+    padding: 5px 5px 5px 10px;
+    width: auto;
+}
+
+ol#list-0 {
+    list-style-type: lower-latin;
+    list-style-position: inside;
+}
+
+ol#list-1 {
+    list-style-type: upper-latin;
+    list-style-position: inside;
+}
+
+ol#list-2 {
+    list-style-type: lower-greek;
+    list-style-position: inside;
+}
+
+ol#list-3 {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+ol#list-4 {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+ol#list-5 {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+ol#list-6 {
+    list-style-image: url("../images/tick.png");
+    list-style-position: inside;
+}
+
+ol#list-7 {
+    list-style-type: lower-roman;
+    list-style-position: inside;
+}
+
+ol#list-8 {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+ol#list-9 {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+ol#list-10 {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+
+.center {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}

@@ -1,0 +1,47 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+main {
+    margin-top: 35px;
+}
+
+li {
+    background: Pink;
+    font-size: 1.5em;
+}
+
+ol,
+ul {
+    border: 2px solid DeepPink;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol.outside-markers {
+    list-style-position: outside;
+}
+
+ol.inside-markers {
+    list-style-position: inside;
+}
+
+ul {
+    list-style: url("../images/star.png") outside square;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
