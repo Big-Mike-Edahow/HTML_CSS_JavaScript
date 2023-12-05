@@ -1,0 +1,16 @@
+/* style.css */
+
+p {
+    border: 2px solid DarkOrange;
+    height: 60px;
+    background: Bisque;
+}
+
+p.help-cursor {
+    cursor: help;
+}
+
+p.target-cursor {
+    cursor: url("./target.cur"), default;
+}
+

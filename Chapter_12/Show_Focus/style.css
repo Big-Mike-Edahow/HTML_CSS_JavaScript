@@ -1,0 +1,10 @@
+/* style.css */
+
+input:focus {
+    background-color: lightblue;
+}
+
+a:focus {
+    background-color: lightgreen;
+}
+
