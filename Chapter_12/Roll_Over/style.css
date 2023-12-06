@@ -1,0 +1,33 @@
+/* style.css */
+
+div {
+    position: absolute;
+    top: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+div#active {
+    left: 10px;
+}
+
+div#prints {
+    left: 170px;
+}
+
+div#active {
+    background: Bisque;
+}
+
+div#prints {
+    background: url("./prints.png") 0 0 Bisque;
+}
+
+div#active:hover {
+    background: DarkOrange;
+}
+
+div#prints:hover {
+    background: url("./prints.png") 0 -50px DarkOrange;
+}
+
