@@ -1,0 +1,83 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+main {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.container {
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.outer {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid Black;
+    background: White;
+}
+
+.inner {
+    display: table-cell;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    font: bold 4em sans-serif;
+}
+
+.drop {
+    box-shadow: 10px 10px 10px DarkOrange;
+}
+
+.drop>div.inner {
+    text-shadow: 2px 2px DarkOrange;
+}
+
+.glow {
+    box-shadow: 0 0 10px 10px DarkOrange;
+}
+
+.glow > .inner {
+    color: White;
+    text-shadow: 2px 2px 4px Black;
+}
+
+.inset {
+    box-shadow: 10px 10px 30px DarkOrange inset;
+}
+
+.inset > .inner {
+    color: Bisque;
+    text-shadow: -1px 0 Black, 0 1px Black, 1px 0 Black, 0 -1px Black;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
