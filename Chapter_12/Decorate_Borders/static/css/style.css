@@ -1,0 +1,63 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: ivory;
+}
+
+main {
+    margin-top: 30px;
+    padding: 0 30px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    display: block;
+    width: 300px;
+    aspect-ratio: 4/3;
+    margin: 20px auto;
+    padding: 20px;
+    background: Bisque;
+    border: 30px solid transparent;
+}
+
+div.image {
+    border-image: url("../images/stars.png");
+}
+
+div.round {
+    border-image: url("../images/stars.png") 33% round;
+}
+
+div.stretch {
+    border-image: url("../images/stars.png") 33% stretch;
+}
+
+div.gradient {
+    border-image: repeating-linear-gradient(45deg, OrangeRed, Orange 20%) 33%;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
