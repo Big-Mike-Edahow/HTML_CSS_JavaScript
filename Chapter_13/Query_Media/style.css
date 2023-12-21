@@ -1,0 +1,33 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: Tomato;
+}
+
+@media screen and (min-width:600px) and (max-width:992px) {
+
+    body {
+        background: DarkOrange;
+    }
+}
+
+@media screen and (max-width:600px) and (orientation:landscape) {
+
+    body {
+        background: LimeGreen;
+    }
+}
+
+@media screen and (max-width:600px) and (orientation:portrait) {
+
+    body {
+        background: RoyalBlue;
+    }
+}
+
