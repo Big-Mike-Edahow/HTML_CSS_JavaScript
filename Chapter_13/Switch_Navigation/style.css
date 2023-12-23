@@ -1,0 +1,54 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: Pink;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: Black;
+    padding: 10px;
+    float: left;
+}
+
+li>a.current {
+    background-color: lightcoral;
+}
+
+li > a:hover {
+    background-color: mediumorchid;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background: Pink;
+        width: 125px;
+    }
+
+    li a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: Black;
+        padding: 10px;
+        width: 100%
+    }
+}
+
