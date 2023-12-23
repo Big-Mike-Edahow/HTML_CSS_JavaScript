@@ -1,0 +1,97 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+    text-align: center;
+}
+
+header,
+footer {
+    background: Purple;
+    color: White;
+}
+
+nav,
+aside {
+    background: Thistle;
+}
+
+div.grid-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10% 15% 60% 10% 5%;
+}
+
+header {
+    grid-column: span 10;
+}
+
+nav {
+    grid-column: span 10;
+}
+
+main {
+    grid-column: span 10;
+}
+
+aside {
+    grid-column: span 10;
+}
+
+footer {
+    grid-column: span 10;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header>div {
+    padding: 0 1em;
+}
+
+header>div:nth-child(3) {
+    margin: 0 0 0 auto;
+}
+
+@media screen and (min-width:600px) and (max-width:992px) {
+
+    div.grid-container {
+        grid-template-rows: 10% 75% 10% 5%;
+    }
+
+    nav {
+        grid-column: span 2;
+    }
+
+    main {
+        grid-column: span 8;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+
+    div.grid-container {
+        grid-template-rows: 10% 85% 5%;
+    }
+
+    nav {
+        grid-column: span 2;
+    }
+
+    main {
+        grid-column: span 6;
+    }
+
+    aside {
+        grid-column: span 2;
+    }
+}
+

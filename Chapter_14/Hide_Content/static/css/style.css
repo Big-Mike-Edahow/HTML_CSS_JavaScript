@@ -1,0 +1,34 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: Black;
+}
+
+div.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+p.screen-reader-text {
+    font: 2em sans-serif;
+    padding: 1em;
+    color: Thistle;
+}
+
+@media screen and (max-width:600px) {
+
+    p.screen-reader-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        left: -10000px;
+        overflow: hidden;
+    }
+}
+

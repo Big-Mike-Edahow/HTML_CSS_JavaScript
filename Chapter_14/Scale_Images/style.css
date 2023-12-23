@@ -1,0 +1,14 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img.scale {
+    width: 100%;
+    height: auto;
+    border: 5px dashed Purple;
+}
+
