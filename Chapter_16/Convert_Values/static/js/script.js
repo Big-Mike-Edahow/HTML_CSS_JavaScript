@@ -1,0 +1,22 @@
+// script.js
+
+(function () {
+  let sum,
+    net = "25",
+    tax = 5.0;
+
+  sum = net + tax;
+  console.log("sum: " + sum + " " + typeof sum);
+
+  sum = parseFloat(net) + tax;
+  console.log("sum: " + sum + " " + typeof sum);
+
+  console.log("tax: " + tax + " " + typeof tax);
+  tax = tax.toString();
+  console.log("tax: " + tax + " " + typeof tax);
+
+  net = "$" + net;
+  console.log("net: " + net + " " + parseInt(net));
+  console.log("net Not a Number? " + isNaN(net));
+})();
+
