@@ -1,0 +1,20 @@
+// script.js
+
+(function () {
+    let seasons = ["Spring", "Summer", "Fall", "Winter"];
+    console.log("Elements: " + seasons);
+
+    console.log("Joined: " + seasons.join(" & "));
+
+    console.log("Popped: " + seasons.pop());
+    console.log("Elements: " + seasons);
+
+    console.log("Pushed: " + seasons.push("Winter"));
+    console.log("Elements: " + seasons);
+
+    console.log("Sliced: " + seasons.slice(1, 3));
+
+    console.log("Spliced: " + seasons.splice(2, 1, "Autumn"));
+    console.log("Elements: " + seasons);
+})();
+
