@@ -1,0 +1,36 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#page-1-body {
+    background-color: rgb(235, 184, 184);
+}
+
+#page-2-body {
+    background-color: rgb(219, 170, 231);
+}
+
+#page-3-body {
+    background-color: rgb(207, 233, 182);
+}
+
+main {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
