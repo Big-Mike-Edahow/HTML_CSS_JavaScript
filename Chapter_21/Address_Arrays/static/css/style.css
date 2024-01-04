@@ -1,0 +1,34 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(174, 232, 75);
+}
+
+main {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+form {
+    width: 500px;
+    height: 100px;
+    background: url("../images/bg.png");
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
